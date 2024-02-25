@@ -127,4 +127,4 @@ window.mobileCheck = function() {
   return check
 };
 
-window.mobileCheck() ?  window.toucmove = startApp : window.onmousemove = startApp
+window.mobileCheck() ?  window.ontouchmove = startApp : window.onmousemove = startApp
