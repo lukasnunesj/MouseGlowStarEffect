@@ -128,3 +128,7 @@ window.mobileCheck = function() {
 };
 
 window.mobileCheck() ?  window.ontouchmove = startApp : window.onmousemove = startApp
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.body.querySelector(".text").innerHTML = window.mobileCheck() ? "Try swiping the screen!" : "Try moving your mouse around the screen!"
+});

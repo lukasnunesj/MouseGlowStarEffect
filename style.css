@@ -1,8 +1,21 @@
+@font-face {
+  font-family: BerkshireSwash;
+  src: url(./BerkshireSwash-Regular.ttf);
+}
 body {
+  font-family: BerkshireSwash;
   margin: 0;
   background: linear-gradient(145deg, #2756D9, #1D3F9E);
   overflow: hidden;
   height: 100vh;
+}
+.text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 .glow {
