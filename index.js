@@ -75,8 +75,8 @@ function handleEffect(point){
 
 function startApp(e) {
   const point = {
-    x: e.clientX,
-    y: e.clientY
+    x: e.clientX ?? e.touches[0].clientX,
+    y: e.clientY ?? e.touches[0].clientY
   }
   updateState(point);
 
